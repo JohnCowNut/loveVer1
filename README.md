@@ -1,0 +1,2 @@
+# loveVer1
+RunAwayNotcontrol

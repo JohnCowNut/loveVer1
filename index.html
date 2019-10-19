@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			 background-image: url('https://i.imgur.com/X0rWRMX.jpg');
+	         background-repeat: no-repeat;
+	         background-attachment: fixed; 
+	         background-size: 100% 100%;
+	</style>
+	<title>Love</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+		<table style="width: 100%">
+		<tr>
+			<th>
+				<div align="center">
+					<h1>Do you love me ???</h1>
+				</div>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<a href="index2.html" ><button class="btn-outline-danger"> Yes. I love you so much!!</button> </a>
+			</td>
+			<td>
+				<div id = "at-Bts" class="col-6">
+				<button type="button" class="btn-outline-danger" >No. I hate you</button>
+				</div>
+			</td>
+		</tr>
+	</table>
+<audio src = "music/mysong.mp3" autoplay="true"></audio>
+<script type="text/javascript">
+	document.getElementById('at-Bts').addEventListener("mousemove",function (event) {
+		onMove();
+	})
+	function onMove() {
+		var x = Math.random() *300;
+		var y = Math.random() *300;
+		var left = x + 'px';
+		var top = y + 'px';
+		document.getElementById('at-Bts').style.left = left;
+		document.getElementById('at-Bts').style.top = top;
+	}
+</script>
+</body>
+</html>
